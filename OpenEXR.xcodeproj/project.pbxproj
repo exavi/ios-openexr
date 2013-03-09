@@ -6,19 +6,353 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		ECA4A9C316EA9C2F005F995F /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = ECA4A9C416EA9C2F005F995F /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				ECA4A9C916EA9C56005F995F /* ShellScript */,
+			);
+			dependencies = (
+				ECA4A9C816EA9C43005F995F /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		ECA4A5A316EA8B85005F995F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA4A5A216EA8B85005F995F /* Foundation.framework */; };
 		ECA4A5A816EA8B85005F995F /* OpenEXR.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5A716EA8B85005F995F /* OpenEXR.h */; };
-		ECA4A5AA16EA8B85005F995F /* OpenEXR.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5A916EA8B85005F995F /* OpenEXR.m */; };
+		ECA4A89C16EA8DD2005F995F /* half.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5C416EA8DD1005F995F /* half.cpp */; };
+		ECA4A8A616EA8DD2005F995F /* IexBaseExc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5DF16EA8DD1005F995F /* IexBaseExc.cpp */; };
+		ECA4A8A716EA8DD2005F995F /* IexThrowErrnoExc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5E416EA8DD1005F995F /* IexThrowErrnoExc.cpp */; };
+		ECA4A8AA16EA8DD2005F995F /* IlmThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5F016EA8DD1005F995F /* IlmThread.cpp */; };
+		ECA4A8AB16EA8DD2005F995F /* IlmThreadMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5F216EA8DD1005F995F /* IlmThreadMutex.cpp */; };
+		ECA4A8AC16EA8DD2005F995F /* IlmThreadMutexPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5F416EA8DD1005F995F /* IlmThreadMutexPosix.cpp */; };
+		ECA4A8AE16EA8DD2005F995F /* IlmThreadPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5F616EA8DD1005F995F /* IlmThreadPool.cpp */; };
+		ECA4A8AF16EA8DD2005F995F /* IlmThreadPosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5F816EA8DD1005F995F /* IlmThreadPosix.cpp */; };
+		ECA4A8B016EA8DD2005F995F /* IlmThreadSemaphore.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5F916EA8DD1005F995F /* IlmThreadSemaphore.cpp */; };
+		ECA4A8B116EA8DD2005F995F /* IlmThreadSemaphorePosix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5FB16EA8DD1005F995F /* IlmThreadSemaphorePosix.cpp */; };
+		ECA4A8B216EA8DD2005F995F /* IlmThreadSemaphorePosixCompat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A5FC16EA8DD1005F995F /* IlmThreadSemaphorePosixCompat.cpp */; };
+		ECA4A8B516EA8DD2005F995F /* ImathBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A60216EA8DD1005F995F /* ImathBox.cpp */; };
+		ECA4A8B616EA8DD2005F995F /* ImathColorAlgo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A60616EA8DD1005F995F /* ImathColorAlgo.cpp */; };
+		ECA4A8B716EA8DD2005F995F /* ImathFun.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A60C16EA8DD1005F995F /* ImathFun.cpp */; };
+		ECA4A8B816EA8DD2005F995F /* ImathMatrixAlgo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A61816EA8DD1005F995F /* ImathMatrixAlgo.cpp */; };
+		ECA4A8B916EA8DD2005F995F /* ImathRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A61D16EA8DD1005F995F /* ImathRandom.cpp */; };
+		ECA4A8BA16EA8DD2005F995F /* ImathShear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A62016EA8DD1005F995F /* ImathShear.cpp */; };
+		ECA4A8BB16EA8DD2005F995F /* ImathVec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A62316EA8DD1005F995F /* ImathVec.cpp */; };
+		ECA4A8E316EA8DD2005F995F /* ImfAcesFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A72516EA8DD2005F995F /* ImfAcesFile.cpp */; };
+		ECA4A8E416EA8DD2005F995F /* ImfAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A72816EA8DD2005F995F /* ImfAttribute.cpp */; };
+		ECA4A8E516EA8DD2005F995F /* ImfB44Compressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A72B16EA8DD2005F995F /* ImfB44Compressor.cpp */; };
+		ECA4A8E616EA8DD2005F995F /* ImfBoxAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A72D16EA8DD2005F995F /* ImfBoxAttribute.cpp */; };
+		ECA4A8E716EA8DD2005F995F /* ImfChannelList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A72F16EA8DD2005F995F /* ImfChannelList.cpp */; };
+		ECA4A8E816EA8DD2005F995F /* ImfChannelListAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A73116EA8DD2005F995F /* ImfChannelListAttribute.cpp */; };
+		ECA4A8E916EA8DD2005F995F /* ImfChromaticities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A73416EA8DD2005F995F /* ImfChromaticities.cpp */; };
+		ECA4A8EA16EA8DD2005F995F /* ImfChromaticitiesAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A73616EA8DD2005F995F /* ImfChromaticitiesAttribute.cpp */; };
+		ECA4A8EB16EA8DD2005F995F /* ImfCompressionAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A73916EA8DD2005F995F /* ImfCompressionAttribute.cpp */; };
+		ECA4A8EC16EA8DD2005F995F /* ImfCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A73B16EA8DD2005F995F /* ImfCompressor.cpp */; };
+		ECA4A8ED16EA8DD2005F995F /* ImfConvert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A73D16EA8DD2005F995F /* ImfConvert.cpp */; };
+		ECA4A8EE16EA8DD2005F995F /* ImfCRgbaFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A73F16EA8DD2005F995F /* ImfCRgbaFile.cpp */; };
+		ECA4A8EF16EA8DD2005F995F /* ImfDoubleAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A74116EA8DD2005F995F /* ImfDoubleAttribute.cpp */; };
+		ECA4A8F016EA8DD2005F995F /* ImfEnvmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A74316EA8DD2005F995F /* ImfEnvmap.cpp */; };
+		ECA4A8F116EA8DD2005F995F /* ImfEnvmapAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A74516EA8DD2005F995F /* ImfEnvmapAttribute.cpp */; };
+		ECA4A8F216EA8DD2005F995F /* ImfFloatAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A74716EA8DD2005F995F /* ImfFloatAttribute.cpp */; };
+		ECA4A8F316EA8DD2005F995F /* ImfFrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A74916EA8DD2005F995F /* ImfFrameBuffer.cpp */; };
+		ECA4A8F416EA8DD2005F995F /* ImfFramesPerSecond.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A74B16EA8DD2005F995F /* ImfFramesPerSecond.cpp */; };
+		ECA4A8F516EA8DD2005F995F /* ImfHeader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A74D16EA8DD2005F995F /* ImfHeader.cpp */; };
+		ECA4A8F616EA8DD2005F995F /* ImfHuf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A74F16EA8DD2005F995F /* ImfHuf.cpp */; };
+		ECA4A8F716EA8DD2005F995F /* ImfInputFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A75116EA8DD2005F995F /* ImfInputFile.cpp */; };
+		ECA4A8F816EA8DD2005F995F /* ImfIntAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A75416EA8DD2005F995F /* ImfIntAttribute.cpp */; };
+		ECA4A8F916EA8DD2005F995F /* ImfIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A75616EA8DD2005F995F /* ImfIO.cpp */; };
+		ECA4A8FA16EA8DD2005F995F /* ImfKeyCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A75816EA8DD2005F995F /* ImfKeyCode.cpp */; };
+		ECA4A8FB16EA8DD2005F995F /* ImfKeyCodeAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A75A16EA8DD2005F995F /* ImfKeyCodeAttribute.cpp */; };
+		ECA4A8FC16EA8DD2005F995F /* ImfLineOrderAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A75D16EA8DD2005F995F /* ImfLineOrderAttribute.cpp */; };
+		ECA4A8FD16EA8DD2005F995F /* ImfLut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A75F16EA8DD2005F995F /* ImfLut.cpp */; };
+		ECA4A8FE16EA8DD2005F995F /* ImfMatrixAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A76116EA8DD2005F995F /* ImfMatrixAttribute.cpp */; };
+		ECA4A8FF16EA8DD2005F995F /* ImfMisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A76316EA8DD2005F995F /* ImfMisc.cpp */; };
+		ECA4A90016EA8DD2005F995F /* ImfMultiView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A76516EA8DD2005F995F /* ImfMultiView.cpp */; };
+		ECA4A90116EA8DD2005F995F /* ImfOpaqueAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A76816EA8DD2005F995F /* ImfOpaqueAttribute.cpp */; };
+		ECA4A90216EA8DD2005F995F /* ImfOutputFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A76A16EA8DD2005F995F /* ImfOutputFile.cpp */; };
+		ECA4A90316EA8DD2005F995F /* ImfPizCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A76D16EA8DD2005F995F /* ImfPizCompressor.cpp */; };
+		ECA4A90416EA8DD2005F995F /* ImfPreviewImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A76F16EA8DD2005F995F /* ImfPreviewImage.cpp */; };
+		ECA4A90516EA8DD2005F995F /* ImfPreviewImageAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A77116EA8DD2005F995F /* ImfPreviewImageAttribute.cpp */; };
+		ECA4A90616EA8DD2005F995F /* ImfPxr24Compressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A77316EA8DD2005F995F /* ImfPxr24Compressor.cpp */; };
+		ECA4A90716EA8DD2005F995F /* ImfRational.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A77516EA8DD2005F995F /* ImfRational.cpp */; };
+		ECA4A90816EA8DD2005F995F /* ImfRationalAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A77716EA8DD2005F995F /* ImfRationalAttribute.cpp */; };
+		ECA4A90916EA8DD2005F995F /* ImfRgbaFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A77A16EA8DD2005F995F /* ImfRgbaFile.cpp */; };
+		ECA4A90A16EA8DD2005F995F /* ImfRgbaYca.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A77C16EA8DD2005F995F /* ImfRgbaYca.cpp */; };
+		ECA4A90B16EA8DD2005F995F /* ImfRleCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A77E16EA8DD2005F995F /* ImfRleCompressor.cpp */; };
+		ECA4A90C16EA8DD2005F995F /* ImfScanLineInputFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A78016EA8DD2005F995F /* ImfScanLineInputFile.cpp */; };
+		ECA4A90D16EA8DD2005F995F /* ImfStandardAttributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A78216EA8DD2005F995F /* ImfStandardAttributes.cpp */; };
+		ECA4A90E16EA8DD2005F995F /* ImfStdIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A78416EA8DD2005F995F /* ImfStdIO.cpp */; };
+		ECA4A90F16EA8DD2005F995F /* ImfStringAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A78616EA8DD2005F995F /* ImfStringAttribute.cpp */; };
+		ECA4A91016EA8DD2005F995F /* ImfStringVectorAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A78816EA8DD2005F995F /* ImfStringVectorAttribute.cpp */; };
+		ECA4A91116EA8DD2005F995F /* ImfTestFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A78A16EA8DD2005F995F /* ImfTestFile.cpp */; };
+		ECA4A91216EA8DD2005F995F /* ImfThreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A78C16EA8DD2005F995F /* ImfThreading.cpp */; };
+		ECA4A91316EA8DD2005F995F /* ImfTileDescriptionAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A78F16EA8DD2005F995F /* ImfTileDescriptionAttribute.cpp */; };
+		ECA4A91416EA8DD2005F995F /* ImfTiledInputFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A79116EA8DD2005F995F /* ImfTiledInputFile.cpp */; };
+		ECA4A91516EA8DD2005F995F /* ImfTiledMisc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A79316EA8DD2005F995F /* ImfTiledMisc.cpp */; };
+		ECA4A91616EA8DD2005F995F /* ImfTiledOutputFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A79516EA8DD2005F995F /* ImfTiledOutputFile.cpp */; };
+		ECA4A91716EA8DD2005F995F /* ImfTiledRgbaFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A79716EA8DD2005F995F /* ImfTiledRgbaFile.cpp */; };
+		ECA4A91816EA8DD2005F995F /* ImfTileOffsets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A79916EA8DD2005F995F /* ImfTileOffsets.cpp */; };
+		ECA4A91916EA8DD2005F995F /* ImfTimeCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A79B16EA8DD2005F995F /* ImfTimeCode.cpp */; };
+		ECA4A91A16EA8DD2005F995F /* ImfTimeCodeAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A79D16EA8DD2005F995F /* ImfTimeCodeAttribute.cpp */; };
+		ECA4A91B16EA8DD2005F995F /* ImfVecAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A79F16EA8DD2005F995F /* ImfVecAttribute.cpp */; };
+		ECA4A91C16EA8DD2005F995F /* ImfVersion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A7A116EA8DD2005F995F /* ImfVersion.cpp */; };
+		ECA4A91D16EA8DD2005F995F /* ImfWav.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A7A316EA8DD2005F995F /* ImfWav.cpp */; };
+		ECA4A91E16EA8DD2005F995F /* ImfZipCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECA4A7A616EA8DD2005F995F /* ImfZipCompressor.cpp */; };
+		ECA4A94E16EA9013005F995F /* eLut.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A94B16EA8EB0005F995F /* eLut.h */; };
+		ECA4A94F16EA9013005F995F /* toFloat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A94C16EA8EB0005F995F /* toFloat.h */; };
+		ECA4A95016EA9013005F995F /* half.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5C516EA8DD1005F995F /* half.h */; };
+		ECA4A95116EA9013005F995F /* halfFunction.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5C616EA8DD1005F995F /* halfFunction.h */; };
+		ECA4A95216EA9013005F995F /* halfLimits.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5C716EA8DD1005F995F /* halfLimits.h */; };
+		ECA4A95316EA9013005F995F /* Iex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5DE16EA8DD1005F995F /* Iex.h */; };
+		ECA4A95416EA9013005F995F /* IexBaseExc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5E016EA8DD1005F995F /* IexBaseExc.h */; };
+		ECA4A95516EA9013005F995F /* IexErrnoExc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5E116EA8DD1005F995F /* IexErrnoExc.h */; };
+		ECA4A95616EA9013005F995F /* IexMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5E216EA8DD1005F995F /* IexMacros.h */; };
+		ECA4A95716EA9013005F995F /* IexMathExc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5E316EA8DD1005F995F /* IexMathExc.h */; };
+		ECA4A95816EA9013005F995F /* IexThrowErrnoExc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5E516EA8DD1005F995F /* IexThrowErrnoExc.h */; };
+		ECA4A95916EA9013005F995F /* IlmThread.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5F116EA8DD1005F995F /* IlmThread.h */; };
+		ECA4A95A16EA9013005F995F /* IlmThreadMutex.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5F316EA8DD1005F995F /* IlmThreadMutex.h */; };
+		ECA4A95B16EA9013005F995F /* IlmThreadPool.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5F716EA8DD1005F995F /* IlmThreadPool.h */; };
+		ECA4A95C16EA9013005F995F /* IlmThreadSemaphore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A5FA16EA8DD1005F995F /* IlmThreadSemaphore.h */; };
+		ECA4A95D16EA9013005F995F /* ImathBox.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60316EA8DD1005F995F /* ImathBox.h */; };
+		ECA4A95E16EA9013005F995F /* ImathBoxAlgo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60416EA8DD1005F995F /* ImathBoxAlgo.h */; };
+		ECA4A95F16EA9013005F995F /* ImathColor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60516EA8DD1005F995F /* ImathColor.h */; };
+		ECA4A96016EA9013005F995F /* ImathColorAlgo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60716EA8DD1005F995F /* ImathColorAlgo.h */; };
+		ECA4A96116EA9013005F995F /* ImathEuler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60816EA8DD1005F995F /* ImathEuler.h */; };
+		ECA4A96216EA9013005F995F /* ImathExc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60916EA8DD1005F995F /* ImathExc.h */; };
+		ECA4A96316EA9013005F995F /* ImathFrame.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60A16EA8DD1005F995F /* ImathFrame.h */; };
+		ECA4A96416EA9013005F995F /* ImathFrustum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60B16EA8DD1005F995F /* ImathFrustum.h */; };
+		ECA4A96516EA9013005F995F /* ImathFun.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60D16EA8DD1005F995F /* ImathFun.h */; };
+		ECA4A96616EA9013005F995F /* ImathGL.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60E16EA8DD1005F995F /* ImathGL.h */; };
+		ECA4A96716EA9013005F995F /* ImathGLU.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A60F16EA8DD1005F995F /* ImathGLU.h */; };
+		ECA4A96816EA9013005F995F /* ImathHalfLimits.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61016EA8DD1005F995F /* ImathHalfLimits.h */; };
+		ECA4A96916EA9013005F995F /* ImathInt64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61116EA8DD1005F995F /* ImathInt64.h */; };
+		ECA4A96A16EA9013005F995F /* ImathInterval.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61216EA8DD1005F995F /* ImathInterval.h */; };
+		ECA4A96B16EA9013005F995F /* ImathLimits.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61316EA8DD1005F995F /* ImathLimits.h */; };
+		ECA4A96C16EA9013005F995F /* ImathLine.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61416EA8DD1005F995F /* ImathLine.h */; };
+		ECA4A96D16EA9013005F995F /* ImathLineAlgo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61516EA8DD1005F995F /* ImathLineAlgo.h */; };
+		ECA4A96E16EA9013005F995F /* ImathMath.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61616EA8DD1005F995F /* ImathMath.h */; };
+		ECA4A96F16EA9013005F995F /* ImathMatrix.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61716EA8DD1005F995F /* ImathMatrix.h */; };
+		ECA4A97016EA9013005F995F /* ImathMatrixAlgo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61916EA8DD1005F995F /* ImathMatrixAlgo.h */; };
+		ECA4A97116EA9013005F995F /* ImathPlane.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61A16EA8DD1005F995F /* ImathPlane.h */; };
+		ECA4A97216EA9013005F995F /* ImathPlatform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61B16EA8DD1005F995F /* ImathPlatform.h */; };
+		ECA4A97316EA9013005F995F /* ImathQuat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61C16EA8DD1005F995F /* ImathQuat.h */; };
+		ECA4A97416EA9013005F995F /* ImathRandom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61E16EA8DD1005F995F /* ImathRandom.h */; };
+		ECA4A97516EA9013005F995F /* ImathRoots.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A61F16EA8DD1005F995F /* ImathRoots.h */; };
+		ECA4A97616EA9013005F995F /* ImathShear.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A62116EA8DD1005F995F /* ImathShear.h */; };
+		ECA4A97716EA9013005F995F /* ImathSphere.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A62216EA8DD1005F995F /* ImathSphere.h */; };
+		ECA4A97816EA9013005F995F /* ImathVec.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A62416EA8DD1005F995F /* ImathVec.h */; };
+		ECA4A97916EA9013005F995F /* ImathVecAlgo.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A62516EA8DD1005F995F /* ImathVecAlgo.h */; };
+		ECA4A97A16EA9146005F995F /* b44ExpLogTable.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A72416EA8DD2005F995F /* b44ExpLogTable.h */; };
+		ECA4A97B16EA9146005F995F /* ImfAcesFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A72616EA8DD2005F995F /* ImfAcesFile.h */; };
+		ECA4A97C16EA9146005F995F /* ImfArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A72716EA8DD2005F995F /* ImfArray.h */; };
+		ECA4A97D16EA9146005F995F /* ImfAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A72916EA8DD2005F995F /* ImfAttribute.h */; };
+		ECA4A97E16EA9146005F995F /* ImfAutoArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A72A16EA8DD2005F995F /* ImfAutoArray.h */; };
+		ECA4A97F16EA9146005F995F /* ImfB44Compressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A72C16EA8DD2005F995F /* ImfB44Compressor.h */; };
+		ECA4A98016EA9146005F995F /* ImfBoxAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A72E16EA8DD2005F995F /* ImfBoxAttribute.h */; };
+		ECA4A98116EA9146005F995F /* ImfChannelList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73016EA8DD2005F995F /* ImfChannelList.h */; };
+		ECA4A98216EA9146005F995F /* ImfChannelListAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73216EA8DD2005F995F /* ImfChannelListAttribute.h */; };
+		ECA4A98316EA9146005F995F /* ImfCheckedArithmetic.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73316EA8DD2005F995F /* ImfCheckedArithmetic.h */; };
+		ECA4A98416EA9146005F995F /* ImfChromaticities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73516EA8DD2005F995F /* ImfChromaticities.h */; };
+		ECA4A98516EA9146005F995F /* ImfChromaticitiesAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73716EA8DD2005F995F /* ImfChromaticitiesAttribute.h */; };
+		ECA4A98616EA9146005F995F /* ImfCompression.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73816EA8DD2005F995F /* ImfCompression.h */; };
+		ECA4A98716EA9146005F995F /* ImfCompressionAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73A16EA8DD2005F995F /* ImfCompressionAttribute.h */; };
+		ECA4A98816EA9146005F995F /* ImfCompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73C16EA8DD2005F995F /* ImfCompressor.h */; };
+		ECA4A98916EA9146005F995F /* ImfConvert.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A73E16EA8DD2005F995F /* ImfConvert.h */; };
+		ECA4A98A16EA9146005F995F /* ImfCRgbaFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A74016EA8DD2005F995F /* ImfCRgbaFile.h */; };
+		ECA4A98B16EA9146005F995F /* ImfDoubleAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A74216EA8DD2005F995F /* ImfDoubleAttribute.h */; };
+		ECA4A98C16EA9146005F995F /* ImfEnvmap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A74416EA8DD2005F995F /* ImfEnvmap.h */; };
+		ECA4A98D16EA9146005F995F /* ImfEnvmapAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A74616EA8DD2005F995F /* ImfEnvmapAttribute.h */; };
+		ECA4A98E16EA9146005F995F /* ImfFloatAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A74816EA8DD2005F995F /* ImfFloatAttribute.h */; };
+		ECA4A98F16EA9146005F995F /* ImfFrameBuffer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A74A16EA8DD2005F995F /* ImfFrameBuffer.h */; };
+		ECA4A99016EA9146005F995F /* ImfFramesPerSecond.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A74C16EA8DD2005F995F /* ImfFramesPerSecond.h */; };
+		ECA4A99116EA9146005F995F /* ImfHeader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A74E16EA8DD2005F995F /* ImfHeader.h */; };
+		ECA4A99216EA9146005F995F /* ImfHuf.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75016EA8DD2005F995F /* ImfHuf.h */; };
+		ECA4A99316EA9146005F995F /* ImfInputFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75216EA8DD2005F995F /* ImfInputFile.h */; };
+		ECA4A99416EA9146005F995F /* ImfInt64.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75316EA8DD2005F995F /* ImfInt64.h */; };
+		ECA4A99516EA9146005F995F /* ImfIntAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75516EA8DD2005F995F /* ImfIntAttribute.h */; };
+		ECA4A99616EA9146005F995F /* ImfIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75716EA8DD2005F995F /* ImfIO.h */; };
+		ECA4A99716EA9146005F995F /* ImfKeyCode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75916EA8DD2005F995F /* ImfKeyCode.h */; };
+		ECA4A99816EA9146005F995F /* ImfKeyCodeAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75B16EA8DD2005F995F /* ImfKeyCodeAttribute.h */; };
+		ECA4A99916EA9146005F995F /* ImfLineOrder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75C16EA8DD2005F995F /* ImfLineOrder.h */; };
+		ECA4A99A16EA9146005F995F /* ImfLineOrderAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A75E16EA8DD2005F995F /* ImfLineOrderAttribute.h */; };
+		ECA4A99B16EA9146005F995F /* ImfLut.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76016EA8DD2005F995F /* ImfLut.h */; };
+		ECA4A99C16EA9146005F995F /* ImfMatrixAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76216EA8DD2005F995F /* ImfMatrixAttribute.h */; };
+		ECA4A99D16EA9146005F995F /* ImfMisc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76416EA8DD2005F995F /* ImfMisc.h */; };
+		ECA4A99E16EA9146005F995F /* ImfMultiView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76616EA8DD2005F995F /* ImfMultiView.h */; };
+		ECA4A99F16EA9146005F995F /* ImfName.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76716EA8DD2005F995F /* ImfName.h */; };
+		ECA4A9A016EA9146005F995F /* ImfOpaqueAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76916EA8DD2005F995F /* ImfOpaqueAttribute.h */; };
+		ECA4A9A116EA9146005F995F /* ImfOutputFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76B16EA8DD2005F995F /* ImfOutputFile.h */; };
+		ECA4A9A216EA9146005F995F /* ImfPixelType.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76C16EA8DD2005F995F /* ImfPixelType.h */; };
+		ECA4A9A316EA9146005F995F /* ImfPizCompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A76E16EA8DD2005F995F /* ImfPizCompressor.h */; };
+		ECA4A9A416EA9146005F995F /* ImfPreviewImage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77016EA8DD2005F995F /* ImfPreviewImage.h */; };
+		ECA4A9A516EA9146005F995F /* ImfPreviewImageAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77216EA8DD2005F995F /* ImfPreviewImageAttribute.h */; };
+		ECA4A9A616EA9146005F995F /* ImfPxr24Compressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77416EA8DD2005F995F /* ImfPxr24Compressor.h */; };
+		ECA4A9A716EA9146005F995F /* ImfRational.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77616EA8DD2005F995F /* ImfRational.h */; };
+		ECA4A9A816EA9146005F995F /* ImfRationalAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77816EA8DD2005F995F /* ImfRationalAttribute.h */; };
+		ECA4A9A916EA9146005F995F /* ImfRgba.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77916EA8DD2005F995F /* ImfRgba.h */; };
+		ECA4A9AA16EA9146005F995F /* ImfRgbaFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77B16EA8DD2005F995F /* ImfRgbaFile.h */; };
+		ECA4A9AB16EA9146005F995F /* ImfRgbaYca.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77D16EA8DD2005F995F /* ImfRgbaYca.h */; };
+		ECA4A9AC16EA9146005F995F /* ImfRleCompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A77F16EA8DD2005F995F /* ImfRleCompressor.h */; };
+		ECA4A9AD16EA9146005F995F /* ImfScanLineInputFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A78116EA8DD2005F995F /* ImfScanLineInputFile.h */; };
+		ECA4A9AE16EA9146005F995F /* ImfStandardAttributes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A78316EA8DD2005F995F /* ImfStandardAttributes.h */; };
+		ECA4A9AF16EA9146005F995F /* ImfStdIO.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A78516EA8DD2005F995F /* ImfStdIO.h */; };
+		ECA4A9B016EA9146005F995F /* ImfStringAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A78716EA8DD2005F995F /* ImfStringAttribute.h */; };
+		ECA4A9B116EA9146005F995F /* ImfStringVectorAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A78916EA8DD2005F995F /* ImfStringVectorAttribute.h */; };
+		ECA4A9B216EA9146005F995F /* ImfTestFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A78B16EA8DD2005F995F /* ImfTestFile.h */; };
+		ECA4A9B316EA9146005F995F /* ImfThreading.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A78D16EA8DD2005F995F /* ImfThreading.h */; };
+		ECA4A9B416EA9146005F995F /* ImfTileDescription.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A78E16EA8DD2005F995F /* ImfTileDescription.h */; };
+		ECA4A9B516EA9146005F995F /* ImfTileDescriptionAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A79016EA8DD2005F995F /* ImfTileDescriptionAttribute.h */; };
+		ECA4A9B616EA9146005F995F /* ImfTiledInputFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A79216EA8DD2005F995F /* ImfTiledInputFile.h */; };
+		ECA4A9B716EA9146005F995F /* ImfTiledMisc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A79416EA8DD2005F995F /* ImfTiledMisc.h */; };
+		ECA4A9B816EA9146005F995F /* ImfTiledOutputFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A79616EA8DD2005F995F /* ImfTiledOutputFile.h */; };
+		ECA4A9B916EA9146005F995F /* ImfTiledRgbaFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A79816EA8DD2005F995F /* ImfTiledRgbaFile.h */; };
+		ECA4A9BA16EA9146005F995F /* ImfTileOffsets.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A79A16EA8DD2005F995F /* ImfTileOffsets.h */; };
+		ECA4A9BB16EA9146005F995F /* ImfTimeCode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A79C16EA8DD2005F995F /* ImfTimeCode.h */; };
+		ECA4A9BC16EA9146005F995F /* ImfTimeCodeAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A79E16EA8DD2005F995F /* ImfTimeCodeAttribute.h */; };
+		ECA4A9BD16EA9146005F995F /* ImfVecAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A7A016EA8DD2005F995F /* ImfVecAttribute.h */; };
+		ECA4A9BE16EA9146005F995F /* ImfVersion.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A7A216EA8DD2005F995F /* ImfVersion.h */; };
+		ECA4A9BF16EA9146005F995F /* ImfWav.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A7A416EA8DD2005F995F /* ImfWav.h */; };
+		ECA4A9C016EA9146005F995F /* ImfXdr.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A7A516EA8DD2005F995F /* ImfXdr.h */; };
+		ECA4A9C116EA9146005F995F /* ImfZipCompressor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECA4A7A716EA8DD2005F995F /* ImfZipCompressor.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA4A9C716EA9C43005F995F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA4A59716EA8B85005F995F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA4A59E16EA8B85005F995F;
+			remoteInfo = OpenEXR;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		ECA4A59D16EA8B85005F995F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			dstPath = Headers;
 			dstSubfolderSpec = 16;
 			files = (
+				ECA4A97A16EA9146005F995F /* b44ExpLogTable.h in CopyFiles */,
+				ECA4A97B16EA9146005F995F /* ImfAcesFile.h in CopyFiles */,
+				ECA4A97C16EA9146005F995F /* ImfArray.h in CopyFiles */,
+				ECA4A97D16EA9146005F995F /* ImfAttribute.h in CopyFiles */,
+				ECA4A97E16EA9146005F995F /* ImfAutoArray.h in CopyFiles */,
+				ECA4A97F16EA9146005F995F /* ImfB44Compressor.h in CopyFiles */,
+				ECA4A98016EA9146005F995F /* ImfBoxAttribute.h in CopyFiles */,
+				ECA4A98116EA9146005F995F /* ImfChannelList.h in CopyFiles */,
+				ECA4A98216EA9146005F995F /* ImfChannelListAttribute.h in CopyFiles */,
+				ECA4A98316EA9146005F995F /* ImfCheckedArithmetic.h in CopyFiles */,
+				ECA4A98416EA9146005F995F /* ImfChromaticities.h in CopyFiles */,
+				ECA4A98516EA9146005F995F /* ImfChromaticitiesAttribute.h in CopyFiles */,
+				ECA4A98616EA9146005F995F /* ImfCompression.h in CopyFiles */,
+				ECA4A98716EA9146005F995F /* ImfCompressionAttribute.h in CopyFiles */,
+				ECA4A98816EA9146005F995F /* ImfCompressor.h in CopyFiles */,
+				ECA4A98916EA9146005F995F /* ImfConvert.h in CopyFiles */,
+				ECA4A98A16EA9146005F995F /* ImfCRgbaFile.h in CopyFiles */,
+				ECA4A98B16EA9146005F995F /* ImfDoubleAttribute.h in CopyFiles */,
+				ECA4A98C16EA9146005F995F /* ImfEnvmap.h in CopyFiles */,
+				ECA4A98D16EA9146005F995F /* ImfEnvmapAttribute.h in CopyFiles */,
+				ECA4A98E16EA9146005F995F /* ImfFloatAttribute.h in CopyFiles */,
+				ECA4A98F16EA9146005F995F /* ImfFrameBuffer.h in CopyFiles */,
+				ECA4A99016EA9146005F995F /* ImfFramesPerSecond.h in CopyFiles */,
+				ECA4A99116EA9146005F995F /* ImfHeader.h in CopyFiles */,
+				ECA4A99216EA9146005F995F /* ImfHuf.h in CopyFiles */,
+				ECA4A99316EA9146005F995F /* ImfInputFile.h in CopyFiles */,
+				ECA4A99416EA9146005F995F /* ImfInt64.h in CopyFiles */,
+				ECA4A99516EA9146005F995F /* ImfIntAttribute.h in CopyFiles */,
+				ECA4A99616EA9146005F995F /* ImfIO.h in CopyFiles */,
+				ECA4A99716EA9146005F995F /* ImfKeyCode.h in CopyFiles */,
+				ECA4A99816EA9146005F995F /* ImfKeyCodeAttribute.h in CopyFiles */,
+				ECA4A99916EA9146005F995F /* ImfLineOrder.h in CopyFiles */,
+				ECA4A99A16EA9146005F995F /* ImfLineOrderAttribute.h in CopyFiles */,
+				ECA4A99B16EA9146005F995F /* ImfLut.h in CopyFiles */,
+				ECA4A99C16EA9146005F995F /* ImfMatrixAttribute.h in CopyFiles */,
+				ECA4A99D16EA9146005F995F /* ImfMisc.h in CopyFiles */,
+				ECA4A99E16EA9146005F995F /* ImfMultiView.h in CopyFiles */,
+				ECA4A99F16EA9146005F995F /* ImfName.h in CopyFiles */,
+				ECA4A9A016EA9146005F995F /* ImfOpaqueAttribute.h in CopyFiles */,
+				ECA4A9A116EA9146005F995F /* ImfOutputFile.h in CopyFiles */,
+				ECA4A9A216EA9146005F995F /* ImfPixelType.h in CopyFiles */,
+				ECA4A9A316EA9146005F995F /* ImfPizCompressor.h in CopyFiles */,
+				ECA4A9A416EA9146005F995F /* ImfPreviewImage.h in CopyFiles */,
+				ECA4A9A516EA9146005F995F /* ImfPreviewImageAttribute.h in CopyFiles */,
+				ECA4A9A616EA9146005F995F /* ImfPxr24Compressor.h in CopyFiles */,
+				ECA4A9A716EA9146005F995F /* ImfRational.h in CopyFiles */,
+				ECA4A9A816EA9146005F995F /* ImfRationalAttribute.h in CopyFiles */,
+				ECA4A9A916EA9146005F995F /* ImfRgba.h in CopyFiles */,
+				ECA4A9AA16EA9146005F995F /* ImfRgbaFile.h in CopyFiles */,
+				ECA4A9AB16EA9146005F995F /* ImfRgbaYca.h in CopyFiles */,
+				ECA4A9AC16EA9146005F995F /* ImfRleCompressor.h in CopyFiles */,
+				ECA4A9AD16EA9146005F995F /* ImfScanLineInputFile.h in CopyFiles */,
+				ECA4A9AE16EA9146005F995F /* ImfStandardAttributes.h in CopyFiles */,
+				ECA4A9AF16EA9146005F995F /* ImfStdIO.h in CopyFiles */,
+				ECA4A9B016EA9146005F995F /* ImfStringAttribute.h in CopyFiles */,
+				ECA4A9B116EA9146005F995F /* ImfStringVectorAttribute.h in CopyFiles */,
+				ECA4A9B216EA9146005F995F /* ImfTestFile.h in CopyFiles */,
+				ECA4A9B316EA9146005F995F /* ImfThreading.h in CopyFiles */,
+				ECA4A9B416EA9146005F995F /* ImfTileDescription.h in CopyFiles */,
+				ECA4A9B516EA9146005F995F /* ImfTileDescriptionAttribute.h in CopyFiles */,
+				ECA4A9B616EA9146005F995F /* ImfTiledInputFile.h in CopyFiles */,
+				ECA4A9B716EA9146005F995F /* ImfTiledMisc.h in CopyFiles */,
+				ECA4A9B816EA9146005F995F /* ImfTiledOutputFile.h in CopyFiles */,
+				ECA4A9B916EA9146005F995F /* ImfTiledRgbaFile.h in CopyFiles */,
+				ECA4A9BA16EA9146005F995F /* ImfTileOffsets.h in CopyFiles */,
+				ECA4A9BB16EA9146005F995F /* ImfTimeCode.h in CopyFiles */,
+				ECA4A9BC16EA9146005F995F /* ImfTimeCodeAttribute.h in CopyFiles */,
+				ECA4A9BD16EA9146005F995F /* ImfVecAttribute.h in CopyFiles */,
+				ECA4A9BE16EA9146005F995F /* ImfVersion.h in CopyFiles */,
+				ECA4A9BF16EA9146005F995F /* ImfWav.h in CopyFiles */,
+				ECA4A9C016EA9146005F995F /* ImfXdr.h in CopyFiles */,
+				ECA4A9C116EA9146005F995F /* ImfZipCompressor.h in CopyFiles */,
+				ECA4A94E16EA9013005F995F /* eLut.h in CopyFiles */,
+				ECA4A94F16EA9013005F995F /* toFloat.h in CopyFiles */,
+				ECA4A95016EA9013005F995F /* half.h in CopyFiles */,
+				ECA4A95116EA9013005F995F /* halfFunction.h in CopyFiles */,
+				ECA4A95216EA9013005F995F /* halfLimits.h in CopyFiles */,
+				ECA4A95316EA9013005F995F /* Iex.h in CopyFiles */,
+				ECA4A95416EA9013005F995F /* IexBaseExc.h in CopyFiles */,
+				ECA4A95516EA9013005F995F /* IexErrnoExc.h in CopyFiles */,
+				ECA4A95616EA9013005F995F /* IexMacros.h in CopyFiles */,
+				ECA4A95716EA9013005F995F /* IexMathExc.h in CopyFiles */,
+				ECA4A95816EA9013005F995F /* IexThrowErrnoExc.h in CopyFiles */,
+				ECA4A95916EA9013005F995F /* IlmThread.h in CopyFiles */,
+				ECA4A95A16EA9013005F995F /* IlmThreadMutex.h in CopyFiles */,
+				ECA4A95B16EA9013005F995F /* IlmThreadPool.h in CopyFiles */,
+				ECA4A95C16EA9013005F995F /* IlmThreadSemaphore.h in CopyFiles */,
+				ECA4A95D16EA9013005F995F /* ImathBox.h in CopyFiles */,
+				ECA4A95E16EA9013005F995F /* ImathBoxAlgo.h in CopyFiles */,
+				ECA4A95F16EA9013005F995F /* ImathColor.h in CopyFiles */,
+				ECA4A96016EA9013005F995F /* ImathColorAlgo.h in CopyFiles */,
+				ECA4A96116EA9013005F995F /* ImathEuler.h in CopyFiles */,
+				ECA4A96216EA9013005F995F /* ImathExc.h in CopyFiles */,
+				ECA4A96316EA9013005F995F /* ImathFrame.h in CopyFiles */,
+				ECA4A96416EA9013005F995F /* ImathFrustum.h in CopyFiles */,
+				ECA4A96516EA9013005F995F /* ImathFun.h in CopyFiles */,
+				ECA4A96616EA9013005F995F /* ImathGL.h in CopyFiles */,
+				ECA4A96716EA9013005F995F /* ImathGLU.h in CopyFiles */,
+				ECA4A96816EA9013005F995F /* ImathHalfLimits.h in CopyFiles */,
+				ECA4A96916EA9013005F995F /* ImathInt64.h in CopyFiles */,
+				ECA4A96A16EA9013005F995F /* ImathInterval.h in CopyFiles */,
+				ECA4A96B16EA9013005F995F /* ImathLimits.h in CopyFiles */,
+				ECA4A96C16EA9013005F995F /* ImathLine.h in CopyFiles */,
+				ECA4A96D16EA9013005F995F /* ImathLineAlgo.h in CopyFiles */,
+				ECA4A96E16EA9013005F995F /* ImathMath.h in CopyFiles */,
+				ECA4A96F16EA9013005F995F /* ImathMatrix.h in CopyFiles */,
+				ECA4A97016EA9013005F995F /* ImathMatrixAlgo.h in CopyFiles */,
+				ECA4A97116EA9013005F995F /* ImathPlane.h in CopyFiles */,
+				ECA4A97216EA9013005F995F /* ImathPlatform.h in CopyFiles */,
+				ECA4A97316EA9013005F995F /* ImathQuat.h in CopyFiles */,
+				ECA4A97416EA9013005F995F /* ImathRandom.h in CopyFiles */,
+				ECA4A97516EA9013005F995F /* ImathRoots.h in CopyFiles */,
+				ECA4A97616EA9013005F995F /* ImathShear.h in CopyFiles */,
+				ECA4A97716EA9013005F995F /* ImathSphere.h in CopyFiles */,
+				ECA4A97816EA9013005F995F /* ImathVec.h in CopyFiles */,
+				ECA4A97916EA9013005F995F /* ImathVecAlgo.h in CopyFiles */,
 				ECA4A5A816EA8B85005F995F /* OpenEXR.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -30,7 +364,202 @@
 		ECA4A5A216EA8B85005F995F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECA4A5A616EA8B85005F995F /* OpenEXR-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenEXR-Prefix.pch"; sourceTree = "<group>"; };
 		ECA4A5A716EA8B85005F995F /* OpenEXR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenEXR.h; sourceTree = "<group>"; };
-		ECA4A5A916EA8B85005F995F /* OpenEXR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenEXR.m; sourceTree = "<group>"; };
+		ECA4A5B616EA8DD1005F995F /* IlmBaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IlmBaseConfig.h; sourceTree = "<group>"; };
+		ECA4A5C416EA8DD1005F995F /* half.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = half.cpp; sourceTree = "<group>"; };
+		ECA4A5C516EA8DD1005F995F /* half.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = half.h; sourceTree = "<group>"; };
+		ECA4A5C616EA8DD1005F995F /* halfFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = halfFunction.h; sourceTree = "<group>"; };
+		ECA4A5C716EA8DD1005F995F /* halfLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = halfLimits.h; sourceTree = "<group>"; };
+		ECA4A5DE16EA8DD1005F995F /* Iex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iex.h; sourceTree = "<group>"; };
+		ECA4A5DF16EA8DD1005F995F /* IexBaseExc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IexBaseExc.cpp; sourceTree = "<group>"; };
+		ECA4A5E016EA8DD1005F995F /* IexBaseExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IexBaseExc.h; sourceTree = "<group>"; };
+		ECA4A5E116EA8DD1005F995F /* IexErrnoExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IexErrnoExc.h; sourceTree = "<group>"; };
+		ECA4A5E216EA8DD1005F995F /* IexMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IexMacros.h; sourceTree = "<group>"; };
+		ECA4A5E316EA8DD1005F995F /* IexMathExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IexMathExc.h; sourceTree = "<group>"; };
+		ECA4A5E416EA8DD1005F995F /* IexThrowErrnoExc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IexThrowErrnoExc.cpp; sourceTree = "<group>"; };
+		ECA4A5E516EA8DD1005F995F /* IexThrowErrnoExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IexThrowErrnoExc.h; sourceTree = "<group>"; };
+		ECA4A5F016EA8DD1005F995F /* IlmThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IlmThread.cpp; sourceTree = "<group>"; };
+		ECA4A5F116EA8DD1005F995F /* IlmThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IlmThread.h; sourceTree = "<group>"; };
+		ECA4A5F216EA8DD1005F995F /* IlmThreadMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IlmThreadMutex.cpp; sourceTree = "<group>"; };
+		ECA4A5F316EA8DD1005F995F /* IlmThreadMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IlmThreadMutex.h; sourceTree = "<group>"; };
+		ECA4A5F416EA8DD1005F995F /* IlmThreadMutexPosix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IlmThreadMutexPosix.cpp; sourceTree = "<group>"; };
+		ECA4A5F616EA8DD1005F995F /* IlmThreadPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IlmThreadPool.cpp; sourceTree = "<group>"; };
+		ECA4A5F716EA8DD1005F995F /* IlmThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IlmThreadPool.h; sourceTree = "<group>"; };
+		ECA4A5F816EA8DD1005F995F /* IlmThreadPosix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IlmThreadPosix.cpp; sourceTree = "<group>"; };
+		ECA4A5F916EA8DD1005F995F /* IlmThreadSemaphore.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IlmThreadSemaphore.cpp; sourceTree = "<group>"; };
+		ECA4A5FA16EA8DD1005F995F /* IlmThreadSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IlmThreadSemaphore.h; sourceTree = "<group>"; };
+		ECA4A5FB16EA8DD1005F995F /* IlmThreadSemaphorePosix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IlmThreadSemaphorePosix.cpp; sourceTree = "<group>"; };
+		ECA4A5FC16EA8DD1005F995F /* IlmThreadSemaphorePosixCompat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IlmThreadSemaphorePosixCompat.cpp; sourceTree = "<group>"; };
+		ECA4A60216EA8DD1005F995F /* ImathBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImathBox.cpp; sourceTree = "<group>"; };
+		ECA4A60316EA8DD1005F995F /* ImathBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathBox.h; sourceTree = "<group>"; };
+		ECA4A60416EA8DD1005F995F /* ImathBoxAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathBoxAlgo.h; sourceTree = "<group>"; };
+		ECA4A60516EA8DD1005F995F /* ImathColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathColor.h; sourceTree = "<group>"; };
+		ECA4A60616EA8DD1005F995F /* ImathColorAlgo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImathColorAlgo.cpp; sourceTree = "<group>"; };
+		ECA4A60716EA8DD1005F995F /* ImathColorAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathColorAlgo.h; sourceTree = "<group>"; };
+		ECA4A60816EA8DD1005F995F /* ImathEuler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathEuler.h; sourceTree = "<group>"; };
+		ECA4A60916EA8DD1005F995F /* ImathExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathExc.h; sourceTree = "<group>"; };
+		ECA4A60A16EA8DD1005F995F /* ImathFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathFrame.h; sourceTree = "<group>"; };
+		ECA4A60B16EA8DD1005F995F /* ImathFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathFrustum.h; sourceTree = "<group>"; };
+		ECA4A60C16EA8DD1005F995F /* ImathFun.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImathFun.cpp; sourceTree = "<group>"; };
+		ECA4A60D16EA8DD1005F995F /* ImathFun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathFun.h; sourceTree = "<group>"; };
+		ECA4A60E16EA8DD1005F995F /* ImathGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathGL.h; sourceTree = "<group>"; };
+		ECA4A60F16EA8DD1005F995F /* ImathGLU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathGLU.h; sourceTree = "<group>"; };
+		ECA4A61016EA8DD1005F995F /* ImathHalfLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathHalfLimits.h; sourceTree = "<group>"; };
+		ECA4A61116EA8DD1005F995F /* ImathInt64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathInt64.h; sourceTree = "<group>"; };
+		ECA4A61216EA8DD1005F995F /* ImathInterval.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathInterval.h; sourceTree = "<group>"; };
+		ECA4A61316EA8DD1005F995F /* ImathLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathLimits.h; sourceTree = "<group>"; };
+		ECA4A61416EA8DD1005F995F /* ImathLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathLine.h; sourceTree = "<group>"; };
+		ECA4A61516EA8DD1005F995F /* ImathLineAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathLineAlgo.h; sourceTree = "<group>"; };
+		ECA4A61616EA8DD1005F995F /* ImathMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathMath.h; sourceTree = "<group>"; };
+		ECA4A61716EA8DD1005F995F /* ImathMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathMatrix.h; sourceTree = "<group>"; };
+		ECA4A61816EA8DD1005F995F /* ImathMatrixAlgo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImathMatrixAlgo.cpp; sourceTree = "<group>"; };
+		ECA4A61916EA8DD1005F995F /* ImathMatrixAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathMatrixAlgo.h; sourceTree = "<group>"; };
+		ECA4A61A16EA8DD1005F995F /* ImathPlane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathPlane.h; sourceTree = "<group>"; };
+		ECA4A61B16EA8DD1005F995F /* ImathPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathPlatform.h; sourceTree = "<group>"; };
+		ECA4A61C16EA8DD1005F995F /* ImathQuat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathQuat.h; sourceTree = "<group>"; };
+		ECA4A61D16EA8DD1005F995F /* ImathRandom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImathRandom.cpp; sourceTree = "<group>"; };
+		ECA4A61E16EA8DD1005F995F /* ImathRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathRandom.h; sourceTree = "<group>"; };
+		ECA4A61F16EA8DD1005F995F /* ImathRoots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathRoots.h; sourceTree = "<group>"; };
+		ECA4A62016EA8DD1005F995F /* ImathShear.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImathShear.cpp; sourceTree = "<group>"; };
+		ECA4A62116EA8DD1005F995F /* ImathShear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathShear.h; sourceTree = "<group>"; };
+		ECA4A62216EA8DD1005F995F /* ImathSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathSphere.h; sourceTree = "<group>"; };
+		ECA4A62316EA8DD1005F995F /* ImathVec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImathVec.cpp; sourceTree = "<group>"; };
+		ECA4A62416EA8DD1005F995F /* ImathVec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathVec.h; sourceTree = "<group>"; };
+		ECA4A62516EA8DD1005F995F /* ImathVecAlgo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImathVecAlgo.h; sourceTree = "<group>"; };
+		ECA4A6DF16EA8DD2005F995F /* OpenEXRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEXRConfig.h; sourceTree = "<group>"; };
+		ECA4A72416EA8DD2005F995F /* b44ExpLogTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b44ExpLogTable.h; sourceTree = "<group>"; };
+		ECA4A72516EA8DD2005F995F /* ImfAcesFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfAcesFile.cpp; sourceTree = "<group>"; };
+		ECA4A72616EA8DD2005F995F /* ImfAcesFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfAcesFile.h; sourceTree = "<group>"; };
+		ECA4A72716EA8DD2005F995F /* ImfArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfArray.h; sourceTree = "<group>"; };
+		ECA4A72816EA8DD2005F995F /* ImfAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A72916EA8DD2005F995F /* ImfAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfAttribute.h; sourceTree = "<group>"; };
+		ECA4A72A16EA8DD2005F995F /* ImfAutoArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfAutoArray.h; sourceTree = "<group>"; };
+		ECA4A72B16EA8DD2005F995F /* ImfB44Compressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfB44Compressor.cpp; sourceTree = "<group>"; };
+		ECA4A72C16EA8DD2005F995F /* ImfB44Compressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfB44Compressor.h; sourceTree = "<group>"; };
+		ECA4A72D16EA8DD2005F995F /* ImfBoxAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfBoxAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A72E16EA8DD2005F995F /* ImfBoxAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfBoxAttribute.h; sourceTree = "<group>"; };
+		ECA4A72F16EA8DD2005F995F /* ImfChannelList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfChannelList.cpp; sourceTree = "<group>"; };
+		ECA4A73016EA8DD2005F995F /* ImfChannelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfChannelList.h; sourceTree = "<group>"; };
+		ECA4A73116EA8DD2005F995F /* ImfChannelListAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfChannelListAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A73216EA8DD2005F995F /* ImfChannelListAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfChannelListAttribute.h; sourceTree = "<group>"; };
+		ECA4A73316EA8DD2005F995F /* ImfCheckedArithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfCheckedArithmetic.h; sourceTree = "<group>"; };
+		ECA4A73416EA8DD2005F995F /* ImfChromaticities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfChromaticities.cpp; sourceTree = "<group>"; };
+		ECA4A73516EA8DD2005F995F /* ImfChromaticities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfChromaticities.h; sourceTree = "<group>"; };
+		ECA4A73616EA8DD2005F995F /* ImfChromaticitiesAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfChromaticitiesAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A73716EA8DD2005F995F /* ImfChromaticitiesAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfChromaticitiesAttribute.h; sourceTree = "<group>"; };
+		ECA4A73816EA8DD2005F995F /* ImfCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfCompression.h; sourceTree = "<group>"; };
+		ECA4A73916EA8DD2005F995F /* ImfCompressionAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfCompressionAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A73A16EA8DD2005F995F /* ImfCompressionAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfCompressionAttribute.h; sourceTree = "<group>"; };
+		ECA4A73B16EA8DD2005F995F /* ImfCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfCompressor.cpp; sourceTree = "<group>"; };
+		ECA4A73C16EA8DD2005F995F /* ImfCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfCompressor.h; sourceTree = "<group>"; };
+		ECA4A73D16EA8DD2005F995F /* ImfConvert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfConvert.cpp; sourceTree = "<group>"; };
+		ECA4A73E16EA8DD2005F995F /* ImfConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfConvert.h; sourceTree = "<group>"; };
+		ECA4A73F16EA8DD2005F995F /* ImfCRgbaFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfCRgbaFile.cpp; sourceTree = "<group>"; };
+		ECA4A74016EA8DD2005F995F /* ImfCRgbaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfCRgbaFile.h; sourceTree = "<group>"; };
+		ECA4A74116EA8DD2005F995F /* ImfDoubleAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfDoubleAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A74216EA8DD2005F995F /* ImfDoubleAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfDoubleAttribute.h; sourceTree = "<group>"; };
+		ECA4A74316EA8DD2005F995F /* ImfEnvmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfEnvmap.cpp; sourceTree = "<group>"; };
+		ECA4A74416EA8DD2005F995F /* ImfEnvmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfEnvmap.h; sourceTree = "<group>"; };
+		ECA4A74516EA8DD2005F995F /* ImfEnvmapAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfEnvmapAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A74616EA8DD2005F995F /* ImfEnvmapAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfEnvmapAttribute.h; sourceTree = "<group>"; };
+		ECA4A74716EA8DD2005F995F /* ImfFloatAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfFloatAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A74816EA8DD2005F995F /* ImfFloatAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfFloatAttribute.h; sourceTree = "<group>"; };
+		ECA4A74916EA8DD2005F995F /* ImfFrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfFrameBuffer.cpp; sourceTree = "<group>"; };
+		ECA4A74A16EA8DD2005F995F /* ImfFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfFrameBuffer.h; sourceTree = "<group>"; };
+		ECA4A74B16EA8DD2005F995F /* ImfFramesPerSecond.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfFramesPerSecond.cpp; sourceTree = "<group>"; };
+		ECA4A74C16EA8DD2005F995F /* ImfFramesPerSecond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfFramesPerSecond.h; sourceTree = "<group>"; };
+		ECA4A74D16EA8DD2005F995F /* ImfHeader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfHeader.cpp; sourceTree = "<group>"; };
+		ECA4A74E16EA8DD2005F995F /* ImfHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfHeader.h; sourceTree = "<group>"; };
+		ECA4A74F16EA8DD2005F995F /* ImfHuf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfHuf.cpp; sourceTree = "<group>"; };
+		ECA4A75016EA8DD2005F995F /* ImfHuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfHuf.h; sourceTree = "<group>"; };
+		ECA4A75116EA8DD2005F995F /* ImfInputFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfInputFile.cpp; sourceTree = "<group>"; };
+		ECA4A75216EA8DD2005F995F /* ImfInputFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfInputFile.h; sourceTree = "<group>"; };
+		ECA4A75316EA8DD2005F995F /* ImfInt64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfInt64.h; sourceTree = "<group>"; };
+		ECA4A75416EA8DD2005F995F /* ImfIntAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfIntAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A75516EA8DD2005F995F /* ImfIntAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfIntAttribute.h; sourceTree = "<group>"; };
+		ECA4A75616EA8DD2005F995F /* ImfIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfIO.cpp; sourceTree = "<group>"; };
+		ECA4A75716EA8DD2005F995F /* ImfIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfIO.h; sourceTree = "<group>"; };
+		ECA4A75816EA8DD2005F995F /* ImfKeyCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfKeyCode.cpp; sourceTree = "<group>"; };
+		ECA4A75916EA8DD2005F995F /* ImfKeyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfKeyCode.h; sourceTree = "<group>"; };
+		ECA4A75A16EA8DD2005F995F /* ImfKeyCodeAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfKeyCodeAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A75B16EA8DD2005F995F /* ImfKeyCodeAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfKeyCodeAttribute.h; sourceTree = "<group>"; };
+		ECA4A75C16EA8DD2005F995F /* ImfLineOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfLineOrder.h; sourceTree = "<group>"; };
+		ECA4A75D16EA8DD2005F995F /* ImfLineOrderAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfLineOrderAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A75E16EA8DD2005F995F /* ImfLineOrderAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfLineOrderAttribute.h; sourceTree = "<group>"; };
+		ECA4A75F16EA8DD2005F995F /* ImfLut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfLut.cpp; sourceTree = "<group>"; };
+		ECA4A76016EA8DD2005F995F /* ImfLut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfLut.h; sourceTree = "<group>"; };
+		ECA4A76116EA8DD2005F995F /* ImfMatrixAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfMatrixAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A76216EA8DD2005F995F /* ImfMatrixAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfMatrixAttribute.h; sourceTree = "<group>"; };
+		ECA4A76316EA8DD2005F995F /* ImfMisc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfMisc.cpp; sourceTree = "<group>"; };
+		ECA4A76416EA8DD2005F995F /* ImfMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfMisc.h; sourceTree = "<group>"; };
+		ECA4A76516EA8DD2005F995F /* ImfMultiView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfMultiView.cpp; sourceTree = "<group>"; };
+		ECA4A76616EA8DD2005F995F /* ImfMultiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfMultiView.h; sourceTree = "<group>"; };
+		ECA4A76716EA8DD2005F995F /* ImfName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfName.h; sourceTree = "<group>"; };
+		ECA4A76816EA8DD2005F995F /* ImfOpaqueAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfOpaqueAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A76916EA8DD2005F995F /* ImfOpaqueAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfOpaqueAttribute.h; sourceTree = "<group>"; };
+		ECA4A76A16EA8DD2005F995F /* ImfOutputFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfOutputFile.cpp; sourceTree = "<group>"; };
+		ECA4A76B16EA8DD2005F995F /* ImfOutputFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfOutputFile.h; sourceTree = "<group>"; };
+		ECA4A76C16EA8DD2005F995F /* ImfPixelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfPixelType.h; sourceTree = "<group>"; };
+		ECA4A76D16EA8DD2005F995F /* ImfPizCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfPizCompressor.cpp; sourceTree = "<group>"; };
+		ECA4A76E16EA8DD2005F995F /* ImfPizCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfPizCompressor.h; sourceTree = "<group>"; };
+		ECA4A76F16EA8DD2005F995F /* ImfPreviewImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfPreviewImage.cpp; sourceTree = "<group>"; };
+		ECA4A77016EA8DD2005F995F /* ImfPreviewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfPreviewImage.h; sourceTree = "<group>"; };
+		ECA4A77116EA8DD2005F995F /* ImfPreviewImageAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfPreviewImageAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A77216EA8DD2005F995F /* ImfPreviewImageAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfPreviewImageAttribute.h; sourceTree = "<group>"; };
+		ECA4A77316EA8DD2005F995F /* ImfPxr24Compressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfPxr24Compressor.cpp; sourceTree = "<group>"; };
+		ECA4A77416EA8DD2005F995F /* ImfPxr24Compressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfPxr24Compressor.h; sourceTree = "<group>"; };
+		ECA4A77516EA8DD2005F995F /* ImfRational.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfRational.cpp; sourceTree = "<group>"; };
+		ECA4A77616EA8DD2005F995F /* ImfRational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfRational.h; sourceTree = "<group>"; };
+		ECA4A77716EA8DD2005F995F /* ImfRationalAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfRationalAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A77816EA8DD2005F995F /* ImfRationalAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfRationalAttribute.h; sourceTree = "<group>"; };
+		ECA4A77916EA8DD2005F995F /* ImfRgba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfRgba.h; sourceTree = "<group>"; };
+		ECA4A77A16EA8DD2005F995F /* ImfRgbaFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfRgbaFile.cpp; sourceTree = "<group>"; };
+		ECA4A77B16EA8DD2005F995F /* ImfRgbaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfRgbaFile.h; sourceTree = "<group>"; };
+		ECA4A77C16EA8DD2005F995F /* ImfRgbaYca.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfRgbaYca.cpp; sourceTree = "<group>"; };
+		ECA4A77D16EA8DD2005F995F /* ImfRgbaYca.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfRgbaYca.h; sourceTree = "<group>"; };
+		ECA4A77E16EA8DD2005F995F /* ImfRleCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfRleCompressor.cpp; sourceTree = "<group>"; };
+		ECA4A77F16EA8DD2005F995F /* ImfRleCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfRleCompressor.h; sourceTree = "<group>"; };
+		ECA4A78016EA8DD2005F995F /* ImfScanLineInputFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfScanLineInputFile.cpp; sourceTree = "<group>"; };
+		ECA4A78116EA8DD2005F995F /* ImfScanLineInputFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfScanLineInputFile.h; sourceTree = "<group>"; };
+		ECA4A78216EA8DD2005F995F /* ImfStandardAttributes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfStandardAttributes.cpp; sourceTree = "<group>"; };
+		ECA4A78316EA8DD2005F995F /* ImfStandardAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfStandardAttributes.h; sourceTree = "<group>"; };
+		ECA4A78416EA8DD2005F995F /* ImfStdIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfStdIO.cpp; sourceTree = "<group>"; };
+		ECA4A78516EA8DD2005F995F /* ImfStdIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfStdIO.h; sourceTree = "<group>"; };
+		ECA4A78616EA8DD2005F995F /* ImfStringAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfStringAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A78716EA8DD2005F995F /* ImfStringAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfStringAttribute.h; sourceTree = "<group>"; };
+		ECA4A78816EA8DD2005F995F /* ImfStringVectorAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfStringVectorAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A78916EA8DD2005F995F /* ImfStringVectorAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfStringVectorAttribute.h; sourceTree = "<group>"; };
+		ECA4A78A16EA8DD2005F995F /* ImfTestFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTestFile.cpp; sourceTree = "<group>"; };
+		ECA4A78B16EA8DD2005F995F /* ImfTestFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTestFile.h; sourceTree = "<group>"; };
+		ECA4A78C16EA8DD2005F995F /* ImfThreading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfThreading.cpp; sourceTree = "<group>"; };
+		ECA4A78D16EA8DD2005F995F /* ImfThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfThreading.h; sourceTree = "<group>"; };
+		ECA4A78E16EA8DD2005F995F /* ImfTileDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTileDescription.h; sourceTree = "<group>"; };
+		ECA4A78F16EA8DD2005F995F /* ImfTileDescriptionAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTileDescriptionAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A79016EA8DD2005F995F /* ImfTileDescriptionAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTileDescriptionAttribute.h; sourceTree = "<group>"; };
+		ECA4A79116EA8DD2005F995F /* ImfTiledInputFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTiledInputFile.cpp; sourceTree = "<group>"; };
+		ECA4A79216EA8DD2005F995F /* ImfTiledInputFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTiledInputFile.h; sourceTree = "<group>"; };
+		ECA4A79316EA8DD2005F995F /* ImfTiledMisc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTiledMisc.cpp; sourceTree = "<group>"; };
+		ECA4A79416EA8DD2005F995F /* ImfTiledMisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTiledMisc.h; sourceTree = "<group>"; };
+		ECA4A79516EA8DD2005F995F /* ImfTiledOutputFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTiledOutputFile.cpp; sourceTree = "<group>"; };
+		ECA4A79616EA8DD2005F995F /* ImfTiledOutputFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTiledOutputFile.h; sourceTree = "<group>"; };
+		ECA4A79716EA8DD2005F995F /* ImfTiledRgbaFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTiledRgbaFile.cpp; sourceTree = "<group>"; };
+		ECA4A79816EA8DD2005F995F /* ImfTiledRgbaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTiledRgbaFile.h; sourceTree = "<group>"; };
+		ECA4A79916EA8DD2005F995F /* ImfTileOffsets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTileOffsets.cpp; sourceTree = "<group>"; };
+		ECA4A79A16EA8DD2005F995F /* ImfTileOffsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTileOffsets.h; sourceTree = "<group>"; };
+		ECA4A79B16EA8DD2005F995F /* ImfTimeCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTimeCode.cpp; sourceTree = "<group>"; };
+		ECA4A79C16EA8DD2005F995F /* ImfTimeCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTimeCode.h; sourceTree = "<group>"; };
+		ECA4A79D16EA8DD2005F995F /* ImfTimeCodeAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTimeCodeAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A79E16EA8DD2005F995F /* ImfTimeCodeAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTimeCodeAttribute.h; sourceTree = "<group>"; };
+		ECA4A79F16EA8DD2005F995F /* ImfVecAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfVecAttribute.cpp; sourceTree = "<group>"; };
+		ECA4A7A016EA8DD2005F995F /* ImfVecAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfVecAttribute.h; sourceTree = "<group>"; };
+		ECA4A7A116EA8DD2005F995F /* ImfVersion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfVersion.cpp; sourceTree = "<group>"; };
+		ECA4A7A216EA8DD2005F995F /* ImfVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfVersion.h; sourceTree = "<group>"; };
+		ECA4A7A316EA8DD2005F995F /* ImfWav.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfWav.cpp; sourceTree = "<group>"; };
+		ECA4A7A416EA8DD2005F995F /* ImfWav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfWav.h; sourceTree = "<group>"; };
+		ECA4A7A516EA8DD2005F995F /* ImfXdr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfXdr.h; sourceTree = "<group>"; };
+		ECA4A7A616EA8DD2005F995F /* ImfZipCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfZipCompressor.cpp; sourceTree = "<group>"; };
+		ECA4A7A716EA8DD2005F995F /* ImfZipCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfZipCompressor.h; sourceTree = "<group>"; };
+		ECA4A94B16EA8EB0005F995F /* eLut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eLut.h; sourceTree = "<group>"; };
+		ECA4A94C16EA8EB0005F995F /* toFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toFloat.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +577,8 @@
 		ECA4A59616EA8B85005F995F = {
 			isa = PBXGroup;
 			children = (
+				ECA4A5B016EA8DD1005F995F /* ilmbase-1.0.2 */,
+				ECA4A6D716EA8DD2005F995F /* openexr-1.7.0 */,
 				ECA4A5A416EA8B85005F995F /* OpenEXR */,
 				ECA4A5A116EA8B85005F995F /* Frameworks */,
 				ECA4A5A016EA8B85005F995F /* Products */,
@@ -74,7 +605,6 @@
 			isa = PBXGroup;
 			children = (
 				ECA4A5A716EA8B85005F995F /* OpenEXR.h */,
-				ECA4A5A916EA8B85005F995F /* OpenEXR.m */,
 				ECA4A5A516EA8B85005F995F /* Supporting Files */,
 			);
 			path = OpenEXR;
@@ -88,6 +618,274 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ECA4A5B016EA8DD1005F995F /* ilmbase-1.0.2 */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A5B516EA8DD1005F995F /* config */,
+				ECA4A5C216EA8DD1005F995F /* Half */,
+				ECA4A5DD16EA8DD1005F995F /* Iex */,
+				ECA4A5EF16EA8DD1005F995F /* IlmThread */,
+				ECA4A60116EA8DD1005F995F /* Imath */,
+			);
+			name = "ilmbase-1.0.2";
+			path = "OpenEXR/ilmbase-1.0.2";
+			sourceTree = "<group>";
+		};
+		ECA4A5B516EA8DD1005F995F /* config */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A5B616EA8DD1005F995F /* IlmBaseConfig.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		ECA4A5C216EA8DD1005F995F /* Half */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A94B16EA8EB0005F995F /* eLut.h */,
+				ECA4A94C16EA8EB0005F995F /* toFloat.h */,
+				ECA4A5C416EA8DD1005F995F /* half.cpp */,
+				ECA4A5C516EA8DD1005F995F /* half.h */,
+				ECA4A5C616EA8DD1005F995F /* halfFunction.h */,
+				ECA4A5C716EA8DD1005F995F /* halfLimits.h */,
+			);
+			path = Half;
+			sourceTree = "<group>";
+		};
+		ECA4A5DD16EA8DD1005F995F /* Iex */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A5DE16EA8DD1005F995F /* Iex.h */,
+				ECA4A5DF16EA8DD1005F995F /* IexBaseExc.cpp */,
+				ECA4A5E016EA8DD1005F995F /* IexBaseExc.h */,
+				ECA4A5E116EA8DD1005F995F /* IexErrnoExc.h */,
+				ECA4A5E216EA8DD1005F995F /* IexMacros.h */,
+				ECA4A5E316EA8DD1005F995F /* IexMathExc.h */,
+				ECA4A5E416EA8DD1005F995F /* IexThrowErrnoExc.cpp */,
+				ECA4A5E516EA8DD1005F995F /* IexThrowErrnoExc.h */,
+			);
+			path = Iex;
+			sourceTree = "<group>";
+		};
+		ECA4A5EF16EA8DD1005F995F /* IlmThread */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A5F016EA8DD1005F995F /* IlmThread.cpp */,
+				ECA4A5F116EA8DD1005F995F /* IlmThread.h */,
+				ECA4A5F216EA8DD1005F995F /* IlmThreadMutex.cpp */,
+				ECA4A5F316EA8DD1005F995F /* IlmThreadMutex.h */,
+				ECA4A5F416EA8DD1005F995F /* IlmThreadMutexPosix.cpp */,
+				ECA4A5F616EA8DD1005F995F /* IlmThreadPool.cpp */,
+				ECA4A5F716EA8DD1005F995F /* IlmThreadPool.h */,
+				ECA4A5F816EA8DD1005F995F /* IlmThreadPosix.cpp */,
+				ECA4A5F916EA8DD1005F995F /* IlmThreadSemaphore.cpp */,
+				ECA4A5FA16EA8DD1005F995F /* IlmThreadSemaphore.h */,
+				ECA4A5FB16EA8DD1005F995F /* IlmThreadSemaphorePosix.cpp */,
+				ECA4A5FC16EA8DD1005F995F /* IlmThreadSemaphorePosixCompat.cpp */,
+			);
+			path = IlmThread;
+			sourceTree = "<group>";
+		};
+		ECA4A60116EA8DD1005F995F /* Imath */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A60216EA8DD1005F995F /* ImathBox.cpp */,
+				ECA4A60316EA8DD1005F995F /* ImathBox.h */,
+				ECA4A60416EA8DD1005F995F /* ImathBoxAlgo.h */,
+				ECA4A60516EA8DD1005F995F /* ImathColor.h */,
+				ECA4A60616EA8DD1005F995F /* ImathColorAlgo.cpp */,
+				ECA4A60716EA8DD1005F995F /* ImathColorAlgo.h */,
+				ECA4A60816EA8DD1005F995F /* ImathEuler.h */,
+				ECA4A60916EA8DD1005F995F /* ImathExc.h */,
+				ECA4A60A16EA8DD1005F995F /* ImathFrame.h */,
+				ECA4A60B16EA8DD1005F995F /* ImathFrustum.h */,
+				ECA4A60C16EA8DD1005F995F /* ImathFun.cpp */,
+				ECA4A60D16EA8DD1005F995F /* ImathFun.h */,
+				ECA4A60E16EA8DD1005F995F /* ImathGL.h */,
+				ECA4A60F16EA8DD1005F995F /* ImathGLU.h */,
+				ECA4A61016EA8DD1005F995F /* ImathHalfLimits.h */,
+				ECA4A61116EA8DD1005F995F /* ImathInt64.h */,
+				ECA4A61216EA8DD1005F995F /* ImathInterval.h */,
+				ECA4A61316EA8DD1005F995F /* ImathLimits.h */,
+				ECA4A61416EA8DD1005F995F /* ImathLine.h */,
+				ECA4A61516EA8DD1005F995F /* ImathLineAlgo.h */,
+				ECA4A61616EA8DD1005F995F /* ImathMath.h */,
+				ECA4A61716EA8DD1005F995F /* ImathMatrix.h */,
+				ECA4A61816EA8DD1005F995F /* ImathMatrixAlgo.cpp */,
+				ECA4A61916EA8DD1005F995F /* ImathMatrixAlgo.h */,
+				ECA4A61A16EA8DD1005F995F /* ImathPlane.h */,
+				ECA4A61B16EA8DD1005F995F /* ImathPlatform.h */,
+				ECA4A61C16EA8DD1005F995F /* ImathQuat.h */,
+				ECA4A61D16EA8DD1005F995F /* ImathRandom.cpp */,
+				ECA4A61E16EA8DD1005F995F /* ImathRandom.h */,
+				ECA4A61F16EA8DD1005F995F /* ImathRoots.h */,
+				ECA4A62016EA8DD1005F995F /* ImathShear.cpp */,
+				ECA4A62116EA8DD1005F995F /* ImathShear.h */,
+				ECA4A62216EA8DD1005F995F /* ImathSphere.h */,
+				ECA4A62316EA8DD1005F995F /* ImathVec.cpp */,
+				ECA4A62416EA8DD1005F995F /* ImathVec.h */,
+				ECA4A62516EA8DD1005F995F /* ImathVecAlgo.h */,
+			);
+			path = Imath;
+			sourceTree = "<group>";
+		};
+		ECA4A6D716EA8DD2005F995F /* openexr-1.7.0 */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A6DC16EA8DD2005F995F /* config */,
+				ECA4A72216EA8DD2005F995F /* IlmImf */,
+			);
+			name = "openexr-1.7.0";
+			path = "OpenEXR/openexr-1.7.0";
+			sourceTree = "<group>";
+		};
+		ECA4A6DC16EA8DD2005F995F /* config */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A6DF16EA8DD2005F995F /* OpenEXRConfig.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		ECA4A72216EA8DD2005F995F /* IlmImf */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4A72416EA8DD2005F995F /* b44ExpLogTable.h */,
+				ECA4A72516EA8DD2005F995F /* ImfAcesFile.cpp */,
+				ECA4A72616EA8DD2005F995F /* ImfAcesFile.h */,
+				ECA4A72716EA8DD2005F995F /* ImfArray.h */,
+				ECA4A72816EA8DD2005F995F /* ImfAttribute.cpp */,
+				ECA4A72916EA8DD2005F995F /* ImfAttribute.h */,
+				ECA4A72A16EA8DD2005F995F /* ImfAutoArray.h */,
+				ECA4A72B16EA8DD2005F995F /* ImfB44Compressor.cpp */,
+				ECA4A72C16EA8DD2005F995F /* ImfB44Compressor.h */,
+				ECA4A72D16EA8DD2005F995F /* ImfBoxAttribute.cpp */,
+				ECA4A72E16EA8DD2005F995F /* ImfBoxAttribute.h */,
+				ECA4A72F16EA8DD2005F995F /* ImfChannelList.cpp */,
+				ECA4A73016EA8DD2005F995F /* ImfChannelList.h */,
+				ECA4A73116EA8DD2005F995F /* ImfChannelListAttribute.cpp */,
+				ECA4A73216EA8DD2005F995F /* ImfChannelListAttribute.h */,
+				ECA4A73316EA8DD2005F995F /* ImfCheckedArithmetic.h */,
+				ECA4A73416EA8DD2005F995F /* ImfChromaticities.cpp */,
+				ECA4A73516EA8DD2005F995F /* ImfChromaticities.h */,
+				ECA4A73616EA8DD2005F995F /* ImfChromaticitiesAttribute.cpp */,
+				ECA4A73716EA8DD2005F995F /* ImfChromaticitiesAttribute.h */,
+				ECA4A73816EA8DD2005F995F /* ImfCompression.h */,
+				ECA4A73916EA8DD2005F995F /* ImfCompressionAttribute.cpp */,
+				ECA4A73A16EA8DD2005F995F /* ImfCompressionAttribute.h */,
+				ECA4A73B16EA8DD2005F995F /* ImfCompressor.cpp */,
+				ECA4A73C16EA8DD2005F995F /* ImfCompressor.h */,
+				ECA4A73D16EA8DD2005F995F /* ImfConvert.cpp */,
+				ECA4A73E16EA8DD2005F995F /* ImfConvert.h */,
+				ECA4A73F16EA8DD2005F995F /* ImfCRgbaFile.cpp */,
+				ECA4A74016EA8DD2005F995F /* ImfCRgbaFile.h */,
+				ECA4A74116EA8DD2005F995F /* ImfDoubleAttribute.cpp */,
+				ECA4A74216EA8DD2005F995F /* ImfDoubleAttribute.h */,
+				ECA4A74316EA8DD2005F995F /* ImfEnvmap.cpp */,
+				ECA4A74416EA8DD2005F995F /* ImfEnvmap.h */,
+				ECA4A74516EA8DD2005F995F /* ImfEnvmapAttribute.cpp */,
+				ECA4A74616EA8DD2005F995F /* ImfEnvmapAttribute.h */,
+				ECA4A74716EA8DD2005F995F /* ImfFloatAttribute.cpp */,
+				ECA4A74816EA8DD2005F995F /* ImfFloatAttribute.h */,
+				ECA4A74916EA8DD2005F995F /* ImfFrameBuffer.cpp */,
+				ECA4A74A16EA8DD2005F995F /* ImfFrameBuffer.h */,
+				ECA4A74B16EA8DD2005F995F /* ImfFramesPerSecond.cpp */,
+				ECA4A74C16EA8DD2005F995F /* ImfFramesPerSecond.h */,
+				ECA4A74D16EA8DD2005F995F /* ImfHeader.cpp */,
+				ECA4A74E16EA8DD2005F995F /* ImfHeader.h */,
+				ECA4A74F16EA8DD2005F995F /* ImfHuf.cpp */,
+				ECA4A75016EA8DD2005F995F /* ImfHuf.h */,
+				ECA4A75116EA8DD2005F995F /* ImfInputFile.cpp */,
+				ECA4A75216EA8DD2005F995F /* ImfInputFile.h */,
+				ECA4A75316EA8DD2005F995F /* ImfInt64.h */,
+				ECA4A75416EA8DD2005F995F /* ImfIntAttribute.cpp */,
+				ECA4A75516EA8DD2005F995F /* ImfIntAttribute.h */,
+				ECA4A75616EA8DD2005F995F /* ImfIO.cpp */,
+				ECA4A75716EA8DD2005F995F /* ImfIO.h */,
+				ECA4A75816EA8DD2005F995F /* ImfKeyCode.cpp */,
+				ECA4A75916EA8DD2005F995F /* ImfKeyCode.h */,
+				ECA4A75A16EA8DD2005F995F /* ImfKeyCodeAttribute.cpp */,
+				ECA4A75B16EA8DD2005F995F /* ImfKeyCodeAttribute.h */,
+				ECA4A75C16EA8DD2005F995F /* ImfLineOrder.h */,
+				ECA4A75D16EA8DD2005F995F /* ImfLineOrderAttribute.cpp */,
+				ECA4A75E16EA8DD2005F995F /* ImfLineOrderAttribute.h */,
+				ECA4A75F16EA8DD2005F995F /* ImfLut.cpp */,
+				ECA4A76016EA8DD2005F995F /* ImfLut.h */,
+				ECA4A76116EA8DD2005F995F /* ImfMatrixAttribute.cpp */,
+				ECA4A76216EA8DD2005F995F /* ImfMatrixAttribute.h */,
+				ECA4A76316EA8DD2005F995F /* ImfMisc.cpp */,
+				ECA4A76416EA8DD2005F995F /* ImfMisc.h */,
+				ECA4A76516EA8DD2005F995F /* ImfMultiView.cpp */,
+				ECA4A76616EA8DD2005F995F /* ImfMultiView.h */,
+				ECA4A76716EA8DD2005F995F /* ImfName.h */,
+				ECA4A76816EA8DD2005F995F /* ImfOpaqueAttribute.cpp */,
+				ECA4A76916EA8DD2005F995F /* ImfOpaqueAttribute.h */,
+				ECA4A76A16EA8DD2005F995F /* ImfOutputFile.cpp */,
+				ECA4A76B16EA8DD2005F995F /* ImfOutputFile.h */,
+				ECA4A76C16EA8DD2005F995F /* ImfPixelType.h */,
+				ECA4A76D16EA8DD2005F995F /* ImfPizCompressor.cpp */,
+				ECA4A76E16EA8DD2005F995F /* ImfPizCompressor.h */,
+				ECA4A76F16EA8DD2005F995F /* ImfPreviewImage.cpp */,
+				ECA4A77016EA8DD2005F995F /* ImfPreviewImage.h */,
+				ECA4A77116EA8DD2005F995F /* ImfPreviewImageAttribute.cpp */,
+				ECA4A77216EA8DD2005F995F /* ImfPreviewImageAttribute.h */,
+				ECA4A77316EA8DD2005F995F /* ImfPxr24Compressor.cpp */,
+				ECA4A77416EA8DD2005F995F /* ImfPxr24Compressor.h */,
+				ECA4A77516EA8DD2005F995F /* ImfRational.cpp */,
+				ECA4A77616EA8DD2005F995F /* ImfRational.h */,
+				ECA4A77716EA8DD2005F995F /* ImfRationalAttribute.cpp */,
+				ECA4A77816EA8DD2005F995F /* ImfRationalAttribute.h */,
+				ECA4A77916EA8DD2005F995F /* ImfRgba.h */,
+				ECA4A77A16EA8DD2005F995F /* ImfRgbaFile.cpp */,
+				ECA4A77B16EA8DD2005F995F /* ImfRgbaFile.h */,
+				ECA4A77C16EA8DD2005F995F /* ImfRgbaYca.cpp */,
+				ECA4A77D16EA8DD2005F995F /* ImfRgbaYca.h */,
+				ECA4A77E16EA8DD2005F995F /* ImfRleCompressor.cpp */,
+				ECA4A77F16EA8DD2005F995F /* ImfRleCompressor.h */,
+				ECA4A78016EA8DD2005F995F /* ImfScanLineInputFile.cpp */,
+				ECA4A78116EA8DD2005F995F /* ImfScanLineInputFile.h */,
+				ECA4A78216EA8DD2005F995F /* ImfStandardAttributes.cpp */,
+				ECA4A78316EA8DD2005F995F /* ImfStandardAttributes.h */,
+				ECA4A78416EA8DD2005F995F /* ImfStdIO.cpp */,
+				ECA4A78516EA8DD2005F995F /* ImfStdIO.h */,
+				ECA4A78616EA8DD2005F995F /* ImfStringAttribute.cpp */,
+				ECA4A78716EA8DD2005F995F /* ImfStringAttribute.h */,
+				ECA4A78816EA8DD2005F995F /* ImfStringVectorAttribute.cpp */,
+				ECA4A78916EA8DD2005F995F /* ImfStringVectorAttribute.h */,
+				ECA4A78A16EA8DD2005F995F /* ImfTestFile.cpp */,
+				ECA4A78B16EA8DD2005F995F /* ImfTestFile.h */,
+				ECA4A78C16EA8DD2005F995F /* ImfThreading.cpp */,
+				ECA4A78D16EA8DD2005F995F /* ImfThreading.h */,
+				ECA4A78E16EA8DD2005F995F /* ImfTileDescription.h */,
+				ECA4A78F16EA8DD2005F995F /* ImfTileDescriptionAttribute.cpp */,
+				ECA4A79016EA8DD2005F995F /* ImfTileDescriptionAttribute.h */,
+				ECA4A79116EA8DD2005F995F /* ImfTiledInputFile.cpp */,
+				ECA4A79216EA8DD2005F995F /* ImfTiledInputFile.h */,
+				ECA4A79316EA8DD2005F995F /* ImfTiledMisc.cpp */,
+				ECA4A79416EA8DD2005F995F /* ImfTiledMisc.h */,
+				ECA4A79516EA8DD2005F995F /* ImfTiledOutputFile.cpp */,
+				ECA4A79616EA8DD2005F995F /* ImfTiledOutputFile.h */,
+				ECA4A79716EA8DD2005F995F /* ImfTiledRgbaFile.cpp */,
+				ECA4A79816EA8DD2005F995F /* ImfTiledRgbaFile.h */,
+				ECA4A79916EA8DD2005F995F /* ImfTileOffsets.cpp */,
+				ECA4A79A16EA8DD2005F995F /* ImfTileOffsets.h */,
+				ECA4A79B16EA8DD2005F995F /* ImfTimeCode.cpp */,
+				ECA4A79C16EA8DD2005F995F /* ImfTimeCode.h */,
+				ECA4A79D16EA8DD2005F995F /* ImfTimeCodeAttribute.cpp */,
+				ECA4A79E16EA8DD2005F995F /* ImfTimeCodeAttribute.h */,
+				ECA4A79F16EA8DD2005F995F /* ImfVecAttribute.cpp */,
+				ECA4A7A016EA8DD2005F995F /* ImfVecAttribute.h */,
+				ECA4A7A116EA8DD2005F995F /* ImfVersion.cpp */,
+				ECA4A7A216EA8DD2005F995F /* ImfVersion.h */,
+				ECA4A7A316EA8DD2005F995F /* ImfWav.cpp */,
+				ECA4A7A416EA8DD2005F995F /* ImfWav.h */,
+				ECA4A7A516EA8DD2005F995F /* ImfXdr.h */,
+				ECA4A7A616EA8DD2005F995F /* ImfZipCompressor.cpp */,
+				ECA4A7A716EA8DD2005F995F /* ImfZipCompressor.h */,
+			);
+			path = IlmImf;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,6 +896,7 @@
 				ECA4A59B16EA8B85005F995F /* Sources */,
 				ECA4A59C16EA8B85005F995F /* Frameworks */,
 				ECA4A59D16EA8B85005F995F /* CopyFiles */,
+				ECA4A9C216EA9183005F995F /* Prepare Framework */,
 			);
 			buildRules = (
 			);
@@ -129,20 +928,136 @@
 			projectRoot = "";
 			targets = (
 				ECA4A59E16EA8B85005F995F /* OpenEXR */,
+				ECA4A9C316EA9C2F005F995F /* Framework */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ECA4A9C216EA9183005F995F /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/Headers/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		ECA4A9C916EA9C56005F995F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECA4A59B16EA8B85005F995F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECA4A5AA16EA8B85005F995F /* OpenEXR.m in Sources */,
+				ECA4A89C16EA8DD2005F995F /* half.cpp in Sources */,
+				ECA4A8A616EA8DD2005F995F /* IexBaseExc.cpp in Sources */,
+				ECA4A8A716EA8DD2005F995F /* IexThrowErrnoExc.cpp in Sources */,
+				ECA4A8AA16EA8DD2005F995F /* IlmThread.cpp in Sources */,
+				ECA4A8AB16EA8DD2005F995F /* IlmThreadMutex.cpp in Sources */,
+				ECA4A8AC16EA8DD2005F995F /* IlmThreadMutexPosix.cpp in Sources */,
+				ECA4A8AE16EA8DD2005F995F /* IlmThreadPool.cpp in Sources */,
+				ECA4A8AF16EA8DD2005F995F /* IlmThreadPosix.cpp in Sources */,
+				ECA4A8B016EA8DD2005F995F /* IlmThreadSemaphore.cpp in Sources */,
+				ECA4A8B116EA8DD2005F995F /* IlmThreadSemaphorePosix.cpp in Sources */,
+				ECA4A8B216EA8DD2005F995F /* IlmThreadSemaphorePosixCompat.cpp in Sources */,
+				ECA4A8B516EA8DD2005F995F /* ImathBox.cpp in Sources */,
+				ECA4A8B616EA8DD2005F995F /* ImathColorAlgo.cpp in Sources */,
+				ECA4A8B716EA8DD2005F995F /* ImathFun.cpp in Sources */,
+				ECA4A8B816EA8DD2005F995F /* ImathMatrixAlgo.cpp in Sources */,
+				ECA4A8B916EA8DD2005F995F /* ImathRandom.cpp in Sources */,
+				ECA4A8BA16EA8DD2005F995F /* ImathShear.cpp in Sources */,
+				ECA4A8BB16EA8DD2005F995F /* ImathVec.cpp in Sources */,
+				ECA4A8E316EA8DD2005F995F /* ImfAcesFile.cpp in Sources */,
+				ECA4A8E416EA8DD2005F995F /* ImfAttribute.cpp in Sources */,
+				ECA4A8E516EA8DD2005F995F /* ImfB44Compressor.cpp in Sources */,
+				ECA4A8E616EA8DD2005F995F /* ImfBoxAttribute.cpp in Sources */,
+				ECA4A8E716EA8DD2005F995F /* ImfChannelList.cpp in Sources */,
+				ECA4A8E816EA8DD2005F995F /* ImfChannelListAttribute.cpp in Sources */,
+				ECA4A8E916EA8DD2005F995F /* ImfChromaticities.cpp in Sources */,
+				ECA4A8EA16EA8DD2005F995F /* ImfChromaticitiesAttribute.cpp in Sources */,
+				ECA4A8EB16EA8DD2005F995F /* ImfCompressionAttribute.cpp in Sources */,
+				ECA4A8EC16EA8DD2005F995F /* ImfCompressor.cpp in Sources */,
+				ECA4A8ED16EA8DD2005F995F /* ImfConvert.cpp in Sources */,
+				ECA4A8EE16EA8DD2005F995F /* ImfCRgbaFile.cpp in Sources */,
+				ECA4A8EF16EA8DD2005F995F /* ImfDoubleAttribute.cpp in Sources */,
+				ECA4A8F016EA8DD2005F995F /* ImfEnvmap.cpp in Sources */,
+				ECA4A8F116EA8DD2005F995F /* ImfEnvmapAttribute.cpp in Sources */,
+				ECA4A8F216EA8DD2005F995F /* ImfFloatAttribute.cpp in Sources */,
+				ECA4A8F316EA8DD2005F995F /* ImfFrameBuffer.cpp in Sources */,
+				ECA4A8F416EA8DD2005F995F /* ImfFramesPerSecond.cpp in Sources */,
+				ECA4A8F516EA8DD2005F995F /* ImfHeader.cpp in Sources */,
+				ECA4A8F616EA8DD2005F995F /* ImfHuf.cpp in Sources */,
+				ECA4A8F716EA8DD2005F995F /* ImfInputFile.cpp in Sources */,
+				ECA4A8F816EA8DD2005F995F /* ImfIntAttribute.cpp in Sources */,
+				ECA4A8F916EA8DD2005F995F /* ImfIO.cpp in Sources */,
+				ECA4A8FA16EA8DD2005F995F /* ImfKeyCode.cpp in Sources */,
+				ECA4A8FB16EA8DD2005F995F /* ImfKeyCodeAttribute.cpp in Sources */,
+				ECA4A8FC16EA8DD2005F995F /* ImfLineOrderAttribute.cpp in Sources */,
+				ECA4A8FD16EA8DD2005F995F /* ImfLut.cpp in Sources */,
+				ECA4A8FE16EA8DD2005F995F /* ImfMatrixAttribute.cpp in Sources */,
+				ECA4A8FF16EA8DD2005F995F /* ImfMisc.cpp in Sources */,
+				ECA4A90016EA8DD2005F995F /* ImfMultiView.cpp in Sources */,
+				ECA4A90116EA8DD2005F995F /* ImfOpaqueAttribute.cpp in Sources */,
+				ECA4A90216EA8DD2005F995F /* ImfOutputFile.cpp in Sources */,
+				ECA4A90316EA8DD2005F995F /* ImfPizCompressor.cpp in Sources */,
+				ECA4A90416EA8DD2005F995F /* ImfPreviewImage.cpp in Sources */,
+				ECA4A90516EA8DD2005F995F /* ImfPreviewImageAttribute.cpp in Sources */,
+				ECA4A90616EA8DD2005F995F /* ImfPxr24Compressor.cpp in Sources */,
+				ECA4A90716EA8DD2005F995F /* ImfRational.cpp in Sources */,
+				ECA4A90816EA8DD2005F995F /* ImfRationalAttribute.cpp in Sources */,
+				ECA4A90916EA8DD2005F995F /* ImfRgbaFile.cpp in Sources */,
+				ECA4A90A16EA8DD2005F995F /* ImfRgbaYca.cpp in Sources */,
+				ECA4A90B16EA8DD2005F995F /* ImfRleCompressor.cpp in Sources */,
+				ECA4A90C16EA8DD2005F995F /* ImfScanLineInputFile.cpp in Sources */,
+				ECA4A90D16EA8DD2005F995F /* ImfStandardAttributes.cpp in Sources */,
+				ECA4A90E16EA8DD2005F995F /* ImfStdIO.cpp in Sources */,
+				ECA4A90F16EA8DD2005F995F /* ImfStringAttribute.cpp in Sources */,
+				ECA4A91016EA8DD2005F995F /* ImfStringVectorAttribute.cpp in Sources */,
+				ECA4A91116EA8DD2005F995F /* ImfTestFile.cpp in Sources */,
+				ECA4A91216EA8DD2005F995F /* ImfThreading.cpp in Sources */,
+				ECA4A91316EA8DD2005F995F /* ImfTileDescriptionAttribute.cpp in Sources */,
+				ECA4A91416EA8DD2005F995F /* ImfTiledInputFile.cpp in Sources */,
+				ECA4A91516EA8DD2005F995F /* ImfTiledMisc.cpp in Sources */,
+				ECA4A91616EA8DD2005F995F /* ImfTiledOutputFile.cpp in Sources */,
+				ECA4A91716EA8DD2005F995F /* ImfTiledRgbaFile.cpp in Sources */,
+				ECA4A91816EA8DD2005F995F /* ImfTileOffsets.cpp in Sources */,
+				ECA4A91916EA8DD2005F995F /* ImfTimeCode.cpp in Sources */,
+				ECA4A91A16EA8DD2005F995F /* ImfTimeCodeAttribute.cpp in Sources */,
+				ECA4A91B16EA8DD2005F995F /* ImfVecAttribute.cpp in Sources */,
+				ECA4A91C16EA8DD2005F995F /* ImfVersion.cpp in Sources */,
+				ECA4A91D16EA8DD2005F995F /* ImfWav.cpp in Sources */,
+				ECA4A91E16EA8DD2005F995F /* ImfZipCompressor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA4A9C816EA9C43005F995F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA4A59E16EA8B85005F995F /* OpenEXR */;
+			targetProxy = ECA4A9C716EA9C43005F995F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ECA4A5AB16EA8B85005F995F /* Debug */ = {
@@ -157,6 +1072,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -171,6 +1087,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
@@ -185,13 +1102,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -199,24 +1118,54 @@
 		ECA4A5AE16EA8B85005F995F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/OpenEXR.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenEXR/OpenEXR-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"ilmbase-1.0.2/**",
+					"openexr-1.7.0/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME).framework/Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
 		ECA4A5AF16EA8B85005F995F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/OpenEXR.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenEXR/OpenEXR-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"ilmbase-1.0.2/**",
+					"openexr-1.7.0/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME).framework/Headers";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		ECA4A9C516EA9C2F005F995F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECA4A9C616EA9C2F005F995F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -237,6 +1186,14 @@
 			buildConfigurations = (
 				ECA4A5AE16EA8B85005F995F /* Debug */,
 				ECA4A5AF16EA8B85005F995F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECA4A9C416EA9C2F005F995F /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA4A9C516EA9C2F005F995F /* Debug */,
+				ECA4A9C616EA9C2F005F995F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
