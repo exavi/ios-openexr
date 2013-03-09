@@ -28,5 +28,7 @@
 // stack sizes.
 //
 
+// This avoids crashes on iOS devices, note that
+// these crashes do not happen on the simulator.
 // #define HAVE_LARGE_STACK 1
 

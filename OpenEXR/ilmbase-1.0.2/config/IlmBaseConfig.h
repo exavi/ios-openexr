@@ -12,5 +12,5 @@
 // own semaphore implementation.
 //
 
-#define HAVE_POSIX_SEMAPHORES 0
+#define HAVE_POSIX_SEMAPHORES 0 // Seems to crash on iOS
 
