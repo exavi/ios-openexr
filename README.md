@@ -15,7 +15,7 @@ When compiling make sure any "*.m" files that use this framework have the "File 
 This is basically a thing I quickly hacked together, that should get you around compiling OpenEXR for iOS, there is probably a smarter way to go around it but this works fine. If you want to know what I did  in case you want to improve it, the only edits done to the original OpenEXR distributed files are:
 
 - POSIX Semaphores are disabled (this seems to crash on iOS)
-- Disabled HAVE_LARGE_STACK as this crashes on iOS devices (not on the simulator) this should make ImfAutoArray allocate from the heap and thus avoid the crashing when doing so from the stack.
+- Disabled HAVE_LARGE_STACK as this crashes on iOS devices (not on the simulator) this should make ImfAutoArray allocate from the heap and thus avoid the crashing when doing using the stack.
 - All includes have <filename.h> replaced by "filename.h" as all header files are packaged in the framework at the same level, this makes code including these nicer.
 - Pregenerated Half headers.
 
