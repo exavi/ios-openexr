@@ -1118,6 +1118,7 @@
 		ECA4A5AE16EA8B85005F995F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/OpenEXR.dst;
@@ -1138,6 +1139,7 @@
 		ECA4A5AF16EA8B85005F995F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/OpenEXR.dst;
@@ -1188,6 +1190,7 @@
 				ECA4A5AF16EA8B85005F995F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA4A9C416EA9C2F005F995F /* Build configuration list for PBXAggregateTarget "Framework" */ = {
 			isa = XCConfigurationList;
@@ -1196,6 +1199,7 @@
 				ECA4A9C616EA9C2F005F995F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
